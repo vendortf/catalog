@@ -1,5 +1,13 @@
-export { EconItem } from "tf2-item-format";
-export { toBaseSKU } from './lib/toBaseSKU';
-export { toFullSKU } from './lib/toFullSKU';
-export { parseSKU } from "./lib/parseSKU";  
-export { toBaseName } from './lib/toName';
+import { EconItem } from "tf2-item-format";
+import { toBaseSKU } from './lib/toBaseSKU';
+import { toFullSKU } from './lib/toFullSKU';
+import { parseSKU } from "./lib/parseSKU";  
+import { toBaseName } from './lib/toName';
+
+export {
+    EconItem,
+    toBaseSKU,
+    toFullSKU,
+    parseSKU,
+    toBaseName
+};
