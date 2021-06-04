@@ -1,8 +1,3 @@
-test("Pass", () => {
-  let num: number = 1;
-  expect(num == 1);
-});
-
 export const ScreamFortressCase = {
     appid: 440,
     contextid: '2',

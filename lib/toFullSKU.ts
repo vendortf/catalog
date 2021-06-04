@@ -15,8 +15,7 @@ export function toFullSKU(econItem: EconItem): string {
     function attachToSKU(component) {
         sku = `${sku};${component}`;
     }
-
-    console.log(paint, parts, spells, sheen, killstreaker, tradable);
+    
     if (paint != null) attachToSKU(`${SKUPrefix.Paint}${schema.getDefindex(paint)}`);
 
     if (parts != null) {
