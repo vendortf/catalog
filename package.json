@@ -1,0 +1,38 @@
+{
+  "name": "@automatedtf/catalog",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "clean": "rm -rf out",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/automatedtf/catalog.git"
+  },
+  "author": "Mengh.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/automatedtf/catalog/issues"
+  },
+  "homepage": "https://github.com/automatedtf/catalog#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.1",
+    "ts-jest": "^27.0.1",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "tf2-item-format": "^4.3.5"
+  },
+  "jest": {
+    "modulePathIgnorePatterns" : [
+      "<rootDir>/__tests__/constants/*" 
+    ]
+  }
+}
