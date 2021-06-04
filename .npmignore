@@ -1,4 +1,4 @@
-lib
+./lib
 __tests__
 node_modules
 index.ts
