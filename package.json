@@ -1,6 +1,6 @@
 {
   "name": "@automatedtf/catalog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -31,8 +31,8 @@
     "tf2-item-format": "^4.3.5"
   },
   "jest": {
-    "modulePathIgnorePatterns" : [
-      "<rootDir>/__tests__/constants/*" 
+    "modulePathIgnorePatterns": [
+      "<rootDir>/__tests__/constants/*"
     ]
   }
 }
