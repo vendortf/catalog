@@ -1,6 +1,6 @@
 import { parseSKU as _parseBaseSKU, SKUAttributes, schema } from 'tf2-item-format';
 import { SKUPrefix } from './enums/SKUPrefix';
-import { Killstreaker, getKillstreakerName } from './enums/Killstreaker';
+import { getKillstreakerName } from './enums/Killstreaker';
 import { Sheen, getSheenName } from './enums/Sheen';
 import { getSpellName } from './enums/Spell';
 
