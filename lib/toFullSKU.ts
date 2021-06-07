@@ -4,6 +4,7 @@ import { getSheenEnum } from './enums/Sheen';
 import { getKillstreakerEnum } from './enums/Killstreaker';
 import { SKUPrefix } from './enums/SKUPrefix';
 import { getSpellDefindex } from './enums/Spell';
+import { getPartDefindex } from './enums/Part';
 
 /**
  * Return full SKU of EconItem
@@ -20,7 +21,7 @@ export function toFullSKU(econItem: EconItem): string {
 
     if (parts != null) {
         let partsDefindices = [];
-        for (let part of parts) partsDefindices.push(schema.getDefindex(`Strange Part: ${part}`));
+        for (let part of parts) partsDefindices.push(getPartDefindex(`Strange Part: ${part}`));
         partsDefindices.sort();
         for (let partDefindex of partsDefindices) attachToSKU(`${SKUPrefix.Part}${partDefindex}`);
     }
