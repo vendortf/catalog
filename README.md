@@ -3,7 +3,7 @@
 ### 📖 Table of Contents
 - [👋 Introduction](#-introduction)
 - [🔌 Getting Started](#-getting-started)
-- [🗂️ What makes a SKU?](#-what-makes-a-sku)
+- [🗂️ What makes a SKU?](#%EF%B8%8F-what-makes-a-sku)
 - [💡 Improvements to Make](#-improvements-to-make)
 - [📚 Helpful Resources](#-helpful-resources)
 
