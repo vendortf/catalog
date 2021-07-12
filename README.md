@@ -28,4 +28,7 @@ Additional: pnt[paintdefindex]?;prt[partdefindex]*;spl[spelldefindex]?;shn[sheen
 ## 💡 Improvements to Make
 `🚧 TODO 🚧`
 ## 📚 Helpful Resources
-`🚧 TODO 🚧`
+- [tf2-item-format](https://github.com/danocmx/node-tf2-item-format)
+- [tf2-sku](https://github.com/Nicklason/node-tf2-sku)
+- [tf2-schema](https://github.com/Nicklason/node-tf2-schema)
+- [tf2-enum](https://github.com/Bonfire/node-tf2-enum)
