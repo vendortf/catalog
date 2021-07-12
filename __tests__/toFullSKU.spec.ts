@@ -12,8 +12,7 @@ test("paint passed along correctly", () => {
 
 test("parts passed along correctly", () => {
     let sku = toFullSKU(StrangeKritzKriegWithPart);
-    console.log(sku);
-    expect(sku.split("prt").length).toBe(3); // 2 parts
+    expect(sku.split("prt").length).toBe(3);
     expect(sku.includes("prt6058")).toBeTruthy();
     expect(sku.includes("prt-1")).toBeTruthy();
 });
