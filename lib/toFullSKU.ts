@@ -23,7 +23,10 @@ export function toFullSKU(econItem: EconItem): string {
         let partsDefindices = [];
         for (let part of parts) partsDefindices.push(getPartDefindex(`Strange Part: ${part}`));
         partsDefindices.sort();
-        for (let partDefindex of partsDefindices) attachToSKU(`${SKUPrefix.Part}${partDefindex}`);
+        for (let partDefindex of partsDefindices) {
+            if (partDefindex == null) continue; // skip default parts
+            attachToSKU(`${SKUPrefix.Part}${partDefindex}`);
+        }
     }
 
     if (spells != null) {
