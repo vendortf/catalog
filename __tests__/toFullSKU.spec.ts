@@ -1,5 +1,5 @@
 import { toFullSKU } from '../lib/toFullSKU';
-import { SpelledAndPaintedFukushima, TeamShinePartedCarbonando, AustraliumGoldUnusualAviator, StrangeKritzKriegWithPart } from './constants/EconItems';
+import { SpelledAndPaintedFukushima, TeamShinePartedCarbonando, AustraliumGoldUnusualAviator, StrangeKritzKriegWithPart, HauntedHalloweenBeepMan } from './constants/EconItems';
 
 
 test("paint passed along correctly", () => {
@@ -30,4 +30,9 @@ test("sheen passed along correctly", () => {
 test("killstreaker passed along correctly", () => {
     let sku = toFullSKU(TeamShinePartedCarbonando);
     expect(sku.includes("ksr")).toBeFalsy();
+});
+
+test("default strange stats aren't included in sku as parts", () => {
+    let sku = toFullSKU({ ...HauntedHalloweenBeepMan, assetid: "" });
+    expect(sku).toBe("30509;13");
 });

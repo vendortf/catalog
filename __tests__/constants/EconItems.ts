@@ -398,3 +398,68 @@ export const TeamShinePartedCarbonando = {
     }
   ]
 }
+
+export const HauntedHalloweenBeepMan = {
+  appid: 440,
+  classid: '1336077537',
+  instanceid: '629236864',
+  currency: 0,
+  background_color: '3C352E',
+  icon_url: 'fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZULUrsm1j-9xgEYalZFYhnnvSh8hcnoMv6NGucF1dszsMBXi2EywVJ4YrKwaWYwcQGVBfUPWPA_rVnpC3M2sMZlUo7v8ulIOVK4vadAw3k',
+  icon_url_large: 'fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZULUrsm1j-9xgEYalZFYhnnvSh8hcnoMv6NGucF1dszsMBXi2EywVJ4YrKwaWYwcQGVBfUPWPA_rVnpC3M2sMZlUo7v8ulIOVK4vadAw3k',
+  descriptions: [
+    { value: '(Carnival Underworld Kills: 0)', color: '756b5e' },
+    { value: '(Carnival Games Won: 0)', color: '756b5e' },
+    {
+      value: 'Holiday Restriction: Halloween / Full Moon',
+      color: 'd83636'
+    }
+  ],
+  tradable: 1,
+  actions: [
+    {
+      link: 'http://wiki.teamfortress.com/scripts/itemredirect.php?id=30509&lang=en_US',
+      name: 'Item Wiki Page...'
+    },
+    {
+      link: 'steam://rungame/440/76561202255233023/+tf_econ_item_preview%20S%owner_steamid%A%assetid%D422539663328697647',
+      name: 'Inspect in Game...'
+    }
+  ],
+  name: 'Strange Haunted Beep Man',
+  name_color: '38f3ab',
+  type: 'Strange Cosmetic Item - Carnival Kills: 0',
+  market_name: 'Strange Haunted Beep Man',
+  market_hash_name: 'Strange Haunted Beep Man',
+  market_actions: [
+    {
+      link: 'steam://rungame/440/76561202255233023/+tf_econ_item_preview%20M%listingid%A%assetid%D422539663328697647',
+      name: 'Inspect in Game...'
+    }
+  ],
+  commodity: 0,
+  market_tradable_restriction: 7,
+  market_marketable_restriction: 0,
+  marketable: 1,
+  tags: [
+    {
+      category: 'Quality',
+      internal_name: 'haunted',
+      localized_category_name: 'Quality',
+      localized_tag_name: 'Haunted',
+      color: '38f3ab'
+    },
+    {
+      category: 'Type',
+      internal_name: 'misc',
+      localized_category_name: 'Type',
+      localized_tag_name: 'Cosmetic'
+    },
+    {
+      category: 'Class',
+      internal_name: 'Engineer',
+      localized_category_name: 'Class',
+      localized_tag_name: 'Engineer'
+    }
+  ]
+};
