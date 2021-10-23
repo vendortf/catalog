@@ -463,3 +463,124 @@ export const HauntedHalloweenBeepMan = {
     }
   ]
 };
+
+export const NormalProfessionalKillstreakBat = {
+  appid: 440,
+  classid: '4416992942',
+  instanceid: '11040671',
+  currency: 0,
+  background_color: '3C352E',
+  icon_url: 'fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZULUrsm1j-9xgEIUwUQSSTuuSpEjYbiXaHaCuVSyI9l4MQCjjJvk1IrYbTjMmM2cFyRAPYICqI5pFruWX8wptdtU1jiacVz',
+  icon_url_large: 'fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZULUrsm1j-9xgEIUwUQSSTuuSpEjYbiXaHaCuVSyI9l4MQCjjJvk1IrYbTjMmM2cFyRAPYICqI5pFruWX8wptdtU1jiacVz',
+  descriptions: [
+    { value: 'Killstreaker: Incinerator', color: '7ea9d1' },
+    { value: 'Killstreaks Active', color: '7ea9d1' }
+  ],
+  tradable: 1,
+  actions: [
+    {
+      link: 'http://wiki.teamfortress.com/scripts/itemredirect.php?id=0&lang=en_US',
+      name: 'Item Wiki Page...'
+    }
+  ],
+  fraudwarnings: [ 'This item has been renamed.\nOriginal name: "Bat"' ],
+  name: "''‮‮''",
+  name_color: 'B2B2B2',
+  type: 'Level 1 Bat',
+  market_name: 'Professional Killstreak Bat',
+  market_hash_name: 'Professional Killstreak Bat',
+  commodity: 0,
+  market_tradable_restriction: 7,
+  market_marketable_restriction: 0,
+  marketable: 1,
+  tags: [
+    {
+      category: 'Quality',
+      internal_name: 'Normal',
+      localized_category_name: 'Quality',
+      localized_tag_name: 'Normal',
+      color: 'B2B2B2'
+    },
+    {
+      category: 'Type',
+      internal_name: 'melee',
+      localized_category_name: 'Type',
+      localized_tag_name: 'Melee weapon'
+    },
+    {
+      category: 'Class',
+      internal_name: 'Scout',
+      localized_category_name: 'Class',
+      localized_tag_name: 'Scout'
+    }
+  ]
+};
+
+export const StrangeElevatedNormalFlameThrower = {
+  appid: 440,
+  classid: '1336243383',
+  instanceid: '45747668',
+  currency: 0,
+  background_color: '3C352E',
+  icon_url: 'fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZULUrsm1j-9xgEIUwEdXBbnrDBRh9_jH82ACfIHnpRt4MQF3Tc7lFd_ZOCxYm5kdFKTVvEKCaRopli7Cn5isZAxV4bm9u4AZ0yx42fOX6Lt',
+  icon_url_large: 'fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZULUrsm1j-9xgEIUwEdXBbnrDBRh9_jH82ACfIHnpRt4MQF3Tc7lFd_ZOCxYm5kdFKTVvEKCaRopli7Cn5isZAxV4bm9u4AZ0yx42fOX6Lt',
+  descriptions: [
+    { value: '(Damage Dealt: 0)', color: '756b5e' },
+    { value: '(Teammates Extinguished: 0)', color: '756b5e' },
+    {
+      value: 'Extinguishing teammates restores 20 health',
+      color: '7ea9d1'
+    },
+    {
+      value: 'Afterburn reduces Medi Gun healing and resist shield effects.\n' +
+        'Alt-Fire: Release a blast of air that pushes enemies and projectiles and extinguishes teammates that are on fire.'
+    }
+  ],
+  tradable: 1,
+  actions: [
+    {
+      link: 'http://wiki.teamfortress.com/scripts/itemredirect.php?id=208&lang=en_US',
+      name: 'Item Wiki Page...'
+    },
+    {
+      link: 'steam://rungame/440/76561202255233023/+tf_econ_item_preview%20S%owner_steamid%A%assetid%D16330055015698336298',
+      name: 'Inspect in Game...'
+    }
+  ],
+  name: 'Strange Flame Thrower',
+  name_color: 'B2B2B2',
+  type: 'Strange Flame Thrower - Kills: 0',
+  market_name: 'Strange Flame Thrower',
+  market_hash_name: 'Strange Flame Thrower',
+  market_actions: [
+    {
+      link: 'steam://rungame/440/76561202255233023/+tf_econ_item_preview%20M%listingid%A%assetid%D16330055015698336298',
+      name: 'Inspect in Game...'
+    }
+  ],
+  commodity: 0,
+  market_tradable_restriction: 7,
+  market_marketable_restriction: 0,
+  marketable: 1,
+  tags: [
+    {
+      category: 'Quality',
+      internal_name: 'Normal',
+      localized_category_name: 'Quality',
+      localized_tag_name: 'Normal',
+      color: 'B2B2B2'
+    },
+    {
+      category: 'Type',
+      internal_name: 'primary',
+      localized_category_name: 'Type',
+      localized_tag_name: 'Primary weapon'
+    },
+    {
+      category: 'Class',
+      internal_name: 'Pyro',
+      localized_category_name: 'Class',
+      localized_tag_name: 'Pyro'
+    }
+  ]
+}
