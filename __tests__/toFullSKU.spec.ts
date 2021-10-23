@@ -1,5 +1,5 @@
 import { toFullSKU } from '../lib/toFullSKU';
-import { SpelledAndPaintedFukushima, TeamShinePartedCarbonando, AustraliumGoldUnusualAviator, StrangeKritzKriegWithPart, HauntedHalloweenBeepMan } from './constants/EconItems';
+import { SpelledAndPaintedFukushima, TeamShinePartedCarbonando, AustraliumGoldUnusualAviator, StrangeKritzKriegWithPart, HauntedHalloweenBeepMan, NormalProfessionalKillstreakBat, StrangeElevatedNormalFlameThrower } from './constants/EconItems';
 
 
 test("paint passed along correctly", () => {
@@ -35,4 +35,14 @@ test("killstreaker passed along correctly", () => {
 test("default strange stats aren't included in sku as parts", () => {
     let sku = toFullSKU({ ...HauntedHalloweenBeepMan, assetid: "" });
     expect(sku).toBe("30509;13");
+});
+
+test("Normal quality", () => {
+    let sku = toFullSKU({ ...NormalProfessionalKillstreakBat, assetid: "" });
+    expect(sku).toBe("190;0;kt-3;ksr4");
+});
+
+test("Elevated quality doesn't hinder base quality", () => {
+    let sku = toFullSKU({ ...StrangeElevatedNormalFlameThrower, assetid: "" });
+    expect(sku).toBe("208;0;strange;prt6020;prt6056");
 });
