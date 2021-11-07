@@ -15,19 +15,27 @@ type ParsedSKUItem = SKUAttributes & {
 }
 
 export function parseSKU(sku: string): ParsedSKUItem {
-    
-    // Parse for base item
-    let baseItem = _parseBaseSKU(sku);
-    let finalItem: ParsedSKUItem = { ...baseItem, tradable: true};
 
-    // Parse any modifications
     let skuComponents = sku.split(";");
+    let finalItem: ParsedSKUItem = { tradable: true, defindex: null, quality: null, craftable: null };
 
+    // === Preprocessing ===
+    // Process any sku components that may interfere with parsing the base sku
     for (let component of skuComponents) {
-
         if (component == "untradable") {
             finalItem.tradable = false;
+            skuComponents.splice(skuComponents.indexOf("untradable"), 1);
         }
+    }
+
+    // === Process into a base SKU ===
+    let baseItem = _parseBaseSKU(skuComponents.join(";"));
+    finalItem = { ...finalItem, ...baseItem };
+
+    // === Postprocessing ===
+    // Apply any additional modifications onto parsed SKU
+    for (let component of skuComponents) {
+
         let prefix = component.substring(0, 3);
         let id = component.substring(3);
         switch (prefix) {
