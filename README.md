@@ -1,6 +1,4 @@
-# Catalog
-
-![example workflow](https://github.com/automatedtf/catalog/actions/workflows/main.yml/badge.svg)
+# Catalog • ![example workflow](https://github.com/automatedtf/catalog/actions/workflows/main.yml/badge.svg)
 
 ### 📖 Table of Contents
 - [👋 Introduction](#-introduction)
