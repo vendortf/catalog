@@ -32,8 +32,8 @@
     "tf2-item-format": "^4.3.5"
   },
   "jest": {
-    "modulePathIgnorePatterns": [
-      "<rootDir>/__tests__/constants/*"
+    "testMatch": [
+      "**/**.spec.ts"
     ]
   }
 }
