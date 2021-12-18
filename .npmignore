@@ -8,4 +8,4 @@ tsconfig.json
 .github
 test.Dockerfile
 __tests__
-.dockerfile
+.dockerignore
