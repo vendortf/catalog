@@ -25,3 +25,15 @@ test("parse an untradable unusual sku", () => {
         tradable: false
     });
 });
+
+test("parse an untradable non-unusual sku", () => {
+    const sku = "5936;6;untradable";
+    const parsed = parseSKU(sku);
+
+    expect(parsed).toEqual({
+        defindex: 5936,
+        craftable: true,
+        quality: 6,
+        tradable: false
+    });
+})
