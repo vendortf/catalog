@@ -3,6 +3,7 @@ node_modules
 index.ts
 tsconfig.json
 .babelrc.json
+.husky
 
 # CI/CD
 .github
