@@ -10,31 +10,31 @@ export enum Quality {
 }
 
 const QualityEnums = {
-    "Normal": Quality.Normal,
-    "Genuine": Quality.Genuine,
-    "Vintage": Quality.Vintage,
-    "Unusual": Quality.Unusual,
-    "Unique": Quality.Unique,
-    "Strange": Quality.Strange,
-    "Haunted": Quality.Haunted,
-    "Collectors": Quality.Collectors,
+	"Normal": Quality.Normal,
+	"Genuine": Quality.Genuine,
+	"Vintage": Quality.Vintage,
+	"Unusual": Quality.Unusual,
+	"Unique": Quality.Unique,
+	"Strange": Quality.Strange,
+	"Haunted": Quality.Haunted,
+	"Collectors": Quality.Collectors,
 
-    [Quality.Normal]: "Normal",
-    [Quality.Genuine]: "Genuine",
-    [Quality.Vintage]: "Vintage",
-    [Quality.Unusual]: "Unusual",
-    [Quality.Unique]: "Unique",
-    [Quality.Strange]: "Strange",
-    [Quality.Haunted]: "Haunted",
-    [Quality.Collectors]: "Collectors",
+	[Quality.Normal]: "Normal",
+	[Quality.Genuine]: "Genuine",
+	[Quality.Vintage]: "Vintage",
+	[Quality.Unusual]: "Unusual",
+	[Quality.Unique]: "Unique",
+	[Quality.Strange]: "Strange",
+	[Quality.Haunted]: "Haunted",
+	[Quality.Collectors]: "Collectors",
 };
 
 export function getQualityEnum(quality: string): Quality {
-    if (quality in QualityEnums) return QualityEnums[quality];
-    throw "Quality not found";
+	if (quality in QualityEnums) return QualityEnums[quality];
+	throw "Quality not found";
 }
 
 export function getQualityName(qualityEnum: Quality): string {
-    if (qualityEnum in QualityEnums) return QualityEnums[qualityEnum];
-    throw "QualityEnum not found";
+	if (qualityEnum in QualityEnums) return QualityEnums[qualityEnum];
+	throw "QualityEnum not found";
 }

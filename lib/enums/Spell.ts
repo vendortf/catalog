@@ -10,12 +10,12 @@ const HALLOWEEN_VFB_NAME = "Voices From Below";
 
 
 export function getSpellName(defindex: number) {
-    if (defindex < HALLOWEEN_FIRST_SPELL || defindex > HALLOWEEN_LAST_SPELL) throw "Not a spell";
-    if (defindex >= HALLOWEEN_SPELL_FIRST_VOICE && defindex <= HALLOWEEN_SPELL_LAST_VOICE) return `${HALLOWEEN_PREFIX} ${HALLOWEEN_VFB_NAME}`;
-    return schema.getName(defindex);
+	if (defindex < HALLOWEEN_FIRST_SPELL || defindex > HALLOWEEN_LAST_SPELL) throw "Not a spell";
+	if (defindex >= HALLOWEEN_SPELL_FIRST_VOICE && defindex <= HALLOWEEN_SPELL_LAST_VOICE) return `${HALLOWEEN_PREFIX} ${HALLOWEEN_VFB_NAME}`;
+	return schema.getName(defindex);
 }
 
 export function getSpellDefindex(name: string) {
-    if (name == `${HALLOWEEN_PREFIX} ${HALLOWEEN_VFB_NAME}`) return HALLOWEEN_SPELL_FIRST_VOICE;
-    return schema.getDefindex(name);
+	if (name == `${HALLOWEEN_PREFIX} ${HALLOWEEN_VFB_NAME}`) return HALLOWEEN_SPELL_FIRST_VOICE;
+	return schema.getDefindex(name);
 }
