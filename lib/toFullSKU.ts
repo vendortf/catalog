@@ -1,4 +1,4 @@
-import { EconItem, parseEconItem, parseString, schema } from "tf2-item-format";
+import { EconItem, parseEconItem, schema } from "tf2-item-format";
 import { toBaseSKU } from "./toBaseSKU";
 import { getSheenEnum } from "./enums/Sheen";
 import { getKillstreakerEnum } from "./enums/Killstreaker";
