@@ -4,6 +4,8 @@ index.ts
 tsconfig.json
 .babelrc.json
 .husky
+.eslintrc.json
+.eslintignore
 
 # CI/CD
 .github
