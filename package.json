@@ -1,6 +1,6 @@
 {
   "name": "@automatedtf/catalog",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "",
   "main": "out/index.js",
   "types": "out/index.d.ts",
