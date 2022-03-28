@@ -1,5 +1,5 @@
 import { toFullSKU } from "../lib/toFullSKU";
-import { SpelledAndPaintedFukushima, TeamShinePartedCarbonando, AustraliumGoldUnusualAviator, StrangeKritzKriegWithPart, HauntedHalloweenBeepMan, NormalProfessionalKillstreakBat, StrangeElevatedNormalFlameThrower } from "./constants/EconItems";
+import { SpelledAndPaintedFukushima, TeamShinePartedCarbonando, AustraliumGoldUnusualAviator, StrangeKritzKriegWithPart, HauntedHalloweenBeepMan, NormalProfessionalKillstreakBat, StrangeElevatedNormalFlameThrower, DoubleSpelledStrangeFlamethrower } from "./constants/EconItems";
 
 
 test("paint passed along correctly", () => {
@@ -45,4 +45,9 @@ test("Normal quality", () => {
 test("Elevated quality doesn't hinder base quality", () => {
 	const sku = toFullSKU({ ...StrangeElevatedNormalFlameThrower, assetid: "" });
 	expect(sku).toBe("208;0;strange;prt6020;prt6056");
+});
+
+test("differently named spells are handled",()=>{
+	const sku = toFullSKU({ ...DoubleSpelledStrangeFlamethrower, assetid: "" });
+	expect(sku).toBe("594;11;kt-3;spl8921;spl8923;shn1;ksr1");
 });
