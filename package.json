@@ -1,5 +1,5 @@
 {
-  "name": "@automatedtf/catalog",
+  "name": "@vendortf/catalog",
   "version": "0.0.27",
   "description": "",
   "main": "out/index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/automatedtf/catalog.git"
+    "url": "git+https://github.com/vendortf/catalog.git"
   },
   "author": "Mengh.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/automatedtf/catalog/issues"
+    "url": "https://github.com/vendortf/catalog/issues"
   },
-  "homepage": "https://github.com/automatedtf/catalog#readme",
+  "homepage": "https://github.com/vendortf/catalog#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.14.0",
     "@babel/preset-typescript": "^7.13.0",

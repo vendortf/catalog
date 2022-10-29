@@ -1,20 +1,15 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "strict": false,
-        "declaration": true,
-        "outDir": "out",
-        "sourceMap": true,
-        "skipLibCheck": true
-    },
-    "include": [
-        "index.ts",
-        "lib"
-    ],
-    "exclude": [
-        "node_modules",
-        "**/*.test.ts"
-    ]
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": false,
+    "declaration": true,
+    "outDir": "out",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "lib": ["es2021"]
+  },
+  "include": ["index.ts", "lib"],
+  "exclude": ["node_modules", "**/*.test.ts"]
 }

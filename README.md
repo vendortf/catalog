@@ -1,3 +1,7 @@
+# Note
+
+This is a fork of the original repo, which adresses performance issues with the `toFullSKU` function.
+
 # Catalog • ![example workflow](https://github.com/automatedtf/catalog/actions/workflows/main.yml/badge.svg)
 
 ### 📖 Table of Contents
