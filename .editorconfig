@@ -1,0 +1,4 @@
+[*.ts]
+semi=true
+printWidth=100
+indent_style = tab

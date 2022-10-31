@@ -45,10 +45,6 @@
       "**/**.spec.ts"
     ]
   },
-  "prettier": {
-    "semi": false,
-    "printWidth": 100
-  },
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "eslint --fix"
