@@ -1,4 +1,4 @@
-import { schema } from "tf2-item-format";
+import { schema } from "tf2-item-format/static";
 
 const PART_PREFIX = "Strange Part:";
 

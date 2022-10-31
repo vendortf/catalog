@@ -38,12 +38,15 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
-    "tf2-item-format": "^4.3.5"
+    "tf2-item-format": "^5.8.5"
   },
   "jest": {
     "testMatch": [
       "**/**.spec.ts"
-    ]
+    ],
+    "moduleNameMapper": {
+      "tf2-item-format/static": "<rootDir>/node_modules/tf2-item-format/dist/static"
+    }
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
