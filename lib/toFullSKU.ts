@@ -1,5 +1,5 @@
 import { EconItem } from "tf2-item-format";
-import { parseEconItem, schema } from "tf2-item-format/static";
+import Format from "@piman51277/fast-format";
 import { toBaseFromParsedEcon } from "./toBaseSKU";
 import { getSheenEnum } from "./enums/Sheen";
 import { getKillstreakerEnum } from "./enums/Killstreaker";
@@ -11,7 +11,7 @@ import { getPartDefindex } from "./enums/Part";
  * Return full SKU of EconItem
  */
 export function toFullSKU(econItem: EconItem): string {
-	const parsedEconItem = parseEconItem(econItem, true, true);
+	const parsedEconItem = Format.parseEconItem(econItem, true, true);
 
 	const { paint, parts, spells, sheen, killstreaker, tradable } =
 		parsedEconItem;
@@ -22,7 +22,7 @@ export function toFullSKU(econItem: EconItem): string {
 	}
 
 	if (paint != null)
-		attachToSKU(`${SKUPrefix.Paint}${schema.getDefindex(paint)}`);
+		attachToSKU(`${SKUPrefix.Paint}${Format.schema.getDefindex(paint)}`);
 
 	if (parts != null) {
 		const partsDefindices = [];

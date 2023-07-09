@@ -1,5 +1,5 @@
 import { parseSKU as _parseBaseSKU, SKUAttributes } from "tf2-item-format";
-import { schema } from "tf2-item-format/static";
+import Format from "@piman51277/fast-format";
 import { SKUPrefix } from "./enums/SKUPrefix";
 import { getKillstreakerName } from "./enums/Killstreaker";
 import { getSheenName } from "./enums/Sheen";
@@ -47,7 +47,7 @@ export function parseSKU(sku: string): ParsedSKUItem {
 				finalItem.killstreaker = getKillstreakerName(parseInt(id));
 				break;
 			case SKUPrefix.Paint:
-				finalItem.paint = schema.getName(id);
+				finalItem.paint = Format.schema.getName(id);
 				break;
 			case SKUPrefix.Part:
 				finalItem.parts = finalItem.parts || [];

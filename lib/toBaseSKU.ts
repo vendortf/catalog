@@ -7,7 +7,7 @@ import {
 	MetaEconAttributes,
 	AddionalEconItemAttributes,
 } from "tf2-item-format";
-import { parseEconItem } from "tf2-item-format/static";
+import Format from "@piman51277/fast-format";
 import { getQualityEnum } from "./enums/Quality";
 
 type ParsedEconItem = ParsedEconNameAtributes &
@@ -18,7 +18,7 @@ type ParsedEconItem = ParsedEconNameAtributes &
 
 // Return base SKU of EconItem
 export function toBaseSKU(econItem: EconItem): string {
-	const parsedEconItem = parseEconItem(econItem, true, true);
+	const parsedEconItem = Format.parseEconItem(econItem, true, true);
 
 	return toBaseFromParsedEcon(parsedEconItem, econItem);
 }

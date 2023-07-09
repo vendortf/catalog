@@ -1,6 +1,6 @@
 import { parseSKU } from "tf2-item-format";
-import { stringify } from "tf2-item-format/static";
+import Format from "@piman51277/fast-format";
 
 export function toBaseName(sku: string) {
-	return stringify(parseSKU(sku));
+	return Format.stringify(parseSKU(sku), { useDefindexes: true });
 }
